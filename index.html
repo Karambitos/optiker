@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/animation.css">
@@ -80,14 +81,14 @@
         <main>
             <section class="order">
                 <div class="order__conteiner">
-                    <div class="order__text animated fadeInLeft">
+                    <div class="order__text" data-aos="fade-right">
                         <div class="order__text--title">100% Qualität seit 1965<br>
                         <span class="order__text--location">– Ihr Optik-Fachgeschäft in Wien.</span>
                         </div>
                         <p class="order__text--description"> Erstklassige Qualität bei Brillenfassungen und Brillengläsern in Kombination aus Tradition und moderner Technik.</p>
-                        <p class="order__text--phone">Jetzt <b>kostenlosen Beratungstermin</b> vereinbaren:<span class="phone__picture"></span>  01/214 12 80</p>
+                        <p class="order__text--phone">Jetzt <b>kostenlosen Beratungstermin</b> vereinbaren:<span class="phone__picture"></span> <a class="phone" href="tel:01/2141280"> 01/214 12 80</a></p>
                     </div><!-- /.text -->
-                    <div class="owl-carousel slide-one animated fadeInRight">
+                    <div class="owl-carousel slide-one" data-aos="fade-left">
                         <div class="picture__conteiner">
                             <img src="./image/carusel/glasses_1.jpg" alt="glasses">
                         </div>
@@ -104,12 +105,12 @@
                 <h1 class="welcome__title">Herzlich willkommen</h1>
                 <p class="welcome__title--description">bei Optik Ellinger in Wien</p>
                 <div class="welcome__text">
-                    <div class="welcome__text--part1 animated fadeInLeft">
+                    <div class="welcome__text--part1" data-aos="fade-right">
                         <p>Optik Ellinger aus Wien ist ein <b>Meisterbetrieb in 2. Generation.</b> Gegründet 1965 bieten wir Ihnen viel Erfahrung und fachliches Wissen. Bei Optik Ellinger werden Brillen noch vom Optikermeister persönlich angefertigt.</p>
                         <p>Ihre Brille wird genau vermessen!</p>
                         <p>Um mit einer Brille wirklich gut sehen zu können müssen die Gläser optimal zentriert in die  <a href="#" class="welcome__link">Brillenfassung</a>  eingearbeitet werden. Für dieses optimale Ergebnis ist eine genaue Anpassung und Vermessung vor Ort erforderlich. Die Angabe der Pupillendistanz alleine, das ist der Abstand zwischen den Augen, genügt für <b>moderne, technologisch aktuelle Brillengläser</b> keinesfalls.</p>
                     </div>
-                    <div class="welcome__text--part2 animated fadeInRight">
+                    <div class="welcome__text--part2" data-aos="fade-left">
                         <p>Nicht nur für <b>Gleitsichtgläser</b>, auch für moderne <b>Einstärkengläser</b> werden zusätzliche Messergebnisse benötigt die bereits in den optischen Schliff Ihres Brillenglases integriert werden. Weitere Parameter werden dann für das Einarbeiten der Gläser in die Brillenfassung berücksichtigt.</p>
                         <p>Bei Optik Ellinger in der Praterstraße wird der Sitz Ihrer Brille mit einem <b> digitalen Zentriergerät</b> genau vermessen. Mit den ermittelten Daten wird Ihre Brille in perfekter Zusammenarbeit zwischen Glashersteller und Optikermeister genau auf Ihre <b>persönlichen Bedürfnisse</b> abgestimmt.</p>
                         <p>Als Ergebnis erhalten Sie eine Brille die Sie aus dem Internet so niemals bestellen können.</p>
@@ -118,7 +119,7 @@
             </section><!-- /.welcome -->
             <section class="categories">
                 <div class="categories__conteiner owl-carousel slide-two">
-                    <div class="categories__box animated flipInY">
+                    <div class="categories__box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <div class="box__inside">
                             <span><img src="./image/Vektor-Smart-Objekt.png" alt="glasses">
                             </span>
@@ -126,7 +127,7 @@
                             <p class="box__inside--text">Ob Sie kurzsichtig oder weitsichtig, in unserem Optikerfachgeschäft erhalten Sie hochwertige Brillengläser für alle Ansprüche.</p>
                         </div>
                     </div>
-                    <div class="categories__box animated flipInY">
+                    <div class="categories__box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <div class="box__inside">
                             <span><img src="./image/Vektor-Smart-Objekt1.png" alt="frame">
                             </span>
@@ -134,7 +135,7 @@
                             <p class="box__inside--text">Wir helfen Ihnen bei der Wahl die optimale Brillenfassung für Ihre Persönlichkeit und Ihren Typ zu finden.</p>
                         </div>
                     </div>
-                    <div class="categories__box animated flipInY">
+                    <div class="categories__box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <div class="box__inside">
                             <span><img src="./image/Vektor-Smart-Objekt2.png" alt="kontaktlinse">
                             </span>
@@ -147,12 +148,12 @@
             <section class="individual">
                 <h1 class="individual__title">Wir helfen Ihnen bei der Bestimmung Ihrer Brillengläser</h1>
                 <div class="individual__text">
-                    <div class="individual__text--part1 animated fadeInRight">
+                    <div data-aos="fade-left" class="individual__text--part1">
                         <p>Bei Kontaktlinsen haben wir die Erfahrung von <b>über 40 Jahren Praxis.</b> Vieles ist bei uns möglich, was andere nicht machen. Immer auf dem neuesten Stand der Entwicklung zu sein ist uns gerade bei Kontaktlinsen ein wichtiges Anliegen.</p>
                         <p>Les Yeux – Pflegemittel für Kontaktlinsen</p>
                         <p>Preiswert und sicher in der Anwendung. Seit Jahrzehnten bewährt. Natürlich auch Benetzungstropfen - <b>Les Yeux Fresh Hyaluron.</b> Empfohlen, auch wenn Sie keine Kontaktlinsen tragen bei müden, gereizten und trockenen Augen bei der Arbeit am Computer und bei trockener Raumluft.</p>
                     </div>
-                    <div class="individual__text--part2 animated fadeInLeft">
+                    <div data-aos="fade-right" class="individual__text--part2">
                         <p>Sie benötigen eine neue Brille aber die alten Werte stimmen vermutlich nicht mehr? Oder ist es eventuell die erste Brille, die Sie benötigen? Kein Problem.</p>
                         <p>Optik Ellinger, Ihr Meisterbetrieb für Brillen und Kontaktlinsen in Wien, bestimmt <b>ohne lange Wartezeiten</b> schnell und professionell die benötigten Werte. Beim Kauf neuer  <a href="#" class="individual__link">Brillengläser</a> ist diese Leistung völlig kostenlos.</p>
                         <p>Auch rund um die Brille haben wir einiges zu bieten: <b>Brillenetui, Putztücher, Brillenbänder und Ketten.</b> Große Auswahl an preiswerten, modischen Sonnenbrillen. Weiters finden Sie bei Optik Ellinger: <b>Thermometer, Hygrometer, Lupen, Leuchtlupen mit LED-Beleuchtung</b> und einiges mehr.</p>
@@ -161,10 +162,9 @@
             </section><!-- /.individual -->
             <section class="advantages">
                 <div class="advantages__conteiner">
-                    <div class="advantages__picture animated fadeInLeft">
-                        <!-- <img src="./image/carusel/Ebene_5.png" alt="glasses"> -->
+                    <div class="advantages__picture" data-aos="fade-right">
                     </div>
-                    <div class="advantages__text animated fadeInRight">
+                    <div class="advantages__text" data-aos="fade-left">
                         <h3 class="advantages__text--title">Brillen von Johann von Goisern</h3>
                         <p class="advantages__text--location">Größte Auswahl in unserem Optikerfachgeschäft.</p>
                         <ul class="advantages__text--list">
@@ -212,7 +212,7 @@
                 </div>
             </section>
             <footer>
-                <div class="nav__contact--conteiner footer__contact animated fadeInUp">
+                <div class="nav__contact--conteiner footer__contact" data-aos="fade-up">
                     <strong class="logo">
                         <a href="/" class="main-header-logo">
                         <img src="./image/optiker-ellinger.png"  alt="logo">
@@ -247,5 +247,9 @@
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/jQuery.js"></script>
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

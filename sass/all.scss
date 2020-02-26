@@ -193,7 +193,24 @@ ul{
 }
 
 // --------------------------------------------------------SECTION SLIDER
+.order {
+    &__container {
 
+        &--black {
+
+        }
+
+        &--wide {
+            
+        }
+
+    }
+    &__text {
+        &--large {
+
+        }
+    }
+}
 .order{
     background-color: #f1ede4;
 
@@ -240,6 +257,10 @@ ul{
                     padding-left: 40px;
                     background-repeat: no-repeat;
                 }
+                .phone{
+                    text-decoration: none;
+                    color: #fff;
+                }
             }
         }
         .owl-carousel{
@@ -250,7 +271,7 @@ ul{
             display: none;
         }
             .picture__conteiner{
-                background-size: cover;
+                background-size: contain;
                 overflow: visible;
                 width: 934px;
                 height: 622px;
@@ -433,11 +454,11 @@ ul{
                     &::before {
                         content: "";
                         width: 90px;
-                        height: 1px;
+                        height: 2px;
                         background-color: #ffffff;
                         opacity: 0.3;
                         position: absolute;
-                        right: calc(50% - 45px);;
+                        right: calc(50% - 45px);
                         top: -30px;
                     }
                 }
@@ -504,9 +525,7 @@ ul{
                     background-size: contain;
                 }
             }
-        }
-        
-
+        }      
     }
 }
 // --------------------------------------------------------SECTION Form
@@ -524,35 +543,35 @@ ul{
         }
 }
 
-    .call-back__title--description{
-        text-align: center;
-        font-size: 20px;
-        color: #b0a99c;
-        position: relative;
-        margin-bottom: 110px; 
+.call-back__title--description{
+    text-align: center;
+    font-size: 20px;
+    color: #b0a99c;
+    position: relative;
+    margin-bottom: 110px; 
 
-        &::before {
-            content: "";
-            background-color: #b0a99c;
-            height: 1px;
-            width: 100%;
-            position: absolute;
-            left: 0;
-            bottom: -51px;
-        }
-        &::after {
-            content: "";
-            background-color: #fff;
-            background-image: url(../image/eye.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 54px;  //chek
-            height: 26px;
-            position: absolute;
-            left: calc(50% - 27px);
-            bottom: -63px;
-        }
+    &::before {
+        content: "";
+        background-color: #b0a99c;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -51px;
     }
+    &::after {
+        content: "";
+        background-color: #fff;
+        background-image: url(../image/eye.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 54px;  //chek
+        height: 26px;
+        position: absolute;
+        left: calc(50% - 27px);
+        bottom: -63px;
+    }
+}
 
 // --------------------------------------------------------FOOTER
 

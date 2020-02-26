@@ -314,13 +314,18 @@ ul {
   background-repeat: no-repeat;
 }
 
+.order .order__conteiner .order__text .order__text--phone .phone {
+  text-decoration: none;
+  color: #fff;
+}
+
 .order .order__conteiner .owl-carousel .owl-nav,
 .order .order__conteiner .owl-carousel .owl-dots {
   display: none;
 }
 
 .order .order__conteiner .owl-carousel .picture__conteiner {
-  background-size: cover;
+  background-size: contain;
   overflow: visible;
   width: 934px;
   height: 622px;
@@ -561,7 +566,7 @@ ul {
 .categories .categories__conteiner .categories__box .box__inside .box__inside--title::before {
   content: "";
   width: 90px;
-  height: 1px;
+  height: 2px;
   background-color: #ffffff;
   opacity: 0.3;
   position: absolute;
