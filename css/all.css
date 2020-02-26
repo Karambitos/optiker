@@ -1148,12 +1148,16 @@ ul {
 @media (min-width: 320px) {
   .main-form__first-block, .main-form__second-block, .main-form__checkbox-block, .main-form__button-block {
     width: 100%;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 
 @media (min-width: 1050px) {
   .main-form__first-block, .main-form__second-block, .main-form__checkbox-block, .main-form__button-block {
     max-width: 48%;
+    padding: 0;
   }
 }
 
@@ -1217,13 +1221,38 @@ ul {
   background-image: url(../image/form/massege.png);
 }
 
+@media (min-width: 320px) {
+  .main-form__textarea-lable {
+    display: none;
+  }
+}
+
+@media (min-width: 1050px) {
+  .main-form__textarea-lable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .main-form__button {
-  width: 254px;
   height: 63px;
   background-color: #96d0c4;
   border: none;
   color: #fff;
   font-size: 18px;
+}
+
+@media (min-width: 320px) {
+  .main-form__button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1050px) {
+  .main-form__button {
+    width: 254px;
+  }
 }
 
 .main-form__button__arrow {
@@ -1246,15 +1275,49 @@ ul {
   transform: rotateZ(-135deg);
 }
 
+@media (min-width: 320px) {
+  .main-form__checkbox-block {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1050px) {
+  .main-form__checkbox-block {
+    margin: 0;
+    text-align: unset;
+  }
+}
+
 .main-form__checkbox {
   width: 16px;
   height: 16px;
-  margin-right: 20px;
 }
 
-.main-form__checkbox-lable {
-  font-size: 18px;
-  line-height: 40px;
+@media (min-width: 320px) {
+  .main-form__checkbox {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .main-form__checkbox {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 320px) {
+  .main-form__checkbox-lable {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .main-form__checkbox-lable {
+    font-size: 18px;
+    line-height: 40px;
+  }
 }
 
 .main-form__checkbox-lable--link {
@@ -1282,8 +1345,19 @@ ul {
   display: block;
   font-size: 18px;
   color: #fff;
-  padding: 23px 27px;
   margin-right: 60px;
+}
+
+@media (min-width: 320px) {
+  .documents .documents__list .documents__item {
+    padding: 20px 10px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .documents .documents__list .documents__item {
+    padding: 23px 27px;
+  }
 }
 
 .documents .documents__list .documents__item:hover, .documents .documents__list .documents__item:active {

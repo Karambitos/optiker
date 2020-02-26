@@ -778,9 +778,12 @@ ul{
     &__button-block{
         @media (min-width: 320px) {
             width: 100%;
+            padding: 0 10px;
+            box-sizing: border-box; //------------------------------------------------------------------------
         }
         @media (min-width: 1050px){
             max-width: 48%;
+            padding: 0;
         }
     }
 
@@ -838,15 +841,29 @@ ul{
         width: 83px;
         height: 190px;
         background-image: url(../image/form/massege.png);   
+
+        @media (min-width: 320px) {
+            display: none;
+        }
+        @media (min-width: 1050px){
+            display: flex;
+        }
     }
 
     &__button{
-        width: 254px;
         height: 63px;
         background-color: #96d0c4;
         border: none;
         color: #fff;
         font-size: 18px;
+
+        @media (min-width: 320px) {
+            width: 100%;
+        }
+
+        @media (min-width: 1050px){
+            width: 254px;
+        }
 
         &__arrow{
             position: relative;
@@ -869,14 +886,42 @@ ul{
         }
     } 
 
+    &__checkbox-block{
+        @media (min-width: 320px) {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        @media (min-width: 1050px){
+            margin: 0;
+            text-align: unset;
+        }
+    }
+    
     &__checkbox{
         width: 16px;
         height: 16px;
-        margin-right: 20px;
+
+        @media (min-width: 320px) {
+            margin-right: 10px;
+        }
+
+        @media (min-width: 1050px){
+            margin-right: 20px;
+        }
     }
+
     &__checkbox-lable{
-        font-size: 18px;
-        line-height: 40px;
+
+        @media (min-width: 320px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        @media (min-width: 1050px){
+            font-size: 18px;
+            line-height: 40px;
+        }
 
         &--link{
             color: #66bdaa;
@@ -903,8 +948,15 @@ ul{
             display: block;
             font-size: 18px;
             color: #fff;
-            padding: 23px 27px; 
             margin-right: 60px; 
+            
+        @media (min-width: 320px) {
+            padding: 20px 10px; 
+        }
+
+        @media (min-width: 1050px){
+            padding: 23px 27px; 
+        }
 
             &:hover,
             &:active{
