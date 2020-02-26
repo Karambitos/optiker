@@ -1,12 +1,31 @@
+.logo_response {
+  @media (min-width: 320px) {
+    display: block;
+    padding: 10px;
+    }
+  @media (min-width: 1050px){
+        display: none;
+    }
+
+    .logo-response__link{
+
+      img{
+        width: 150px;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
 .spinner {
             box-sizing: border-box;
             cursor: pointer;
             z-index: 102;
             height: 14px;
             width: 18px;
-            margin: auto;
+            margin: auto 30px;
             @media (min-width: 320px) {
                 display: block;
+                margin-left: auto;
             }
             @media (min-width: 1050px){
                     display: none;

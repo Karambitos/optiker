@@ -1,9 +1,12 @@
 @import "spinner";
-
+html{
+    overflow-x: hidden;
+}
 body{
     font-family: 'Open Sans', sans-serif;
     color: #363636;
     font-weight: 400;  
+    overflow-x: hidden;
 }
 * {
     margin: 0;
@@ -117,11 +120,17 @@ ul{
             }
     
             .main-nav__font-resize{
-                display: flex; 
                 align-items: flex-end;
                 padding: 23px 0;
                 margin-left: auto;
                 position: relative;
+
+                @media (min-width: 320px) {
+                    display: none;
+                }
+                @media (min-width: 1050px){
+                        display: flex;
+                }
 
                 &::before {
                     content: "";
@@ -207,24 +216,6 @@ ul{
 }
 
 // --------------------------------------------------------SECTION SLIDER
-.order {
-    &__container {
-
-        &--black {
-
-        }
-
-        &--wide {
-            
-        }
-
-    }
-    &__text {
-        &--large {
-
-        }
-    }
-}
 .order{
     background-color: #f1ede4;
 
@@ -469,11 +460,9 @@ ul{
             line-height: 1.6;
 
             @media (min-width: 320px) {
-                text-align: justify;
             }
             @media (min-width: 1050px){
                 font-size: 18px;
-                text-align: unset;
             }
         }
         .welcome__text--part1 p,
@@ -792,7 +781,7 @@ ul{
         display: flex;
     }
 
-    &__lable{
+    &__label{
         width: 83px;
         // height: 84px;
         background-position: center;
@@ -801,13 +790,13 @@ ul{
         background-color: #f1ede4;
     }
 
-    &__name-lable{
+    &__name-label{
         background-image: url(../image/form/name.png);   
     }
-    &__email-lable{
+    &__email-label{
         background-image: url(../image/form/email.png);   
     }
-    &__tel-lable{
+    &__tel-label{
         background-image: url(../image/form/tel.png);   
     }
 
@@ -833,11 +822,11 @@ ul{
         color: #363636;
         box-sizing: border-box;
     }
-    &__date-lable{
+    &__date-label{
         background-image: url(../image/form/date.png);   
     }
 
-    &__textarea-lable{
+    &__textarea-label{
         width: 83px;
         height: 190px;
         background-image: url(../image/form/massege.png);   
@@ -911,7 +900,7 @@ ul{
         }
     }
 
-    &__checkbox-lable{
+    &__checkbox-label{
 
         @media (min-width: 320px) {
             font-size: 14px;

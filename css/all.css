@@ -1,4 +1,23 @@
 @charset "UTF-8";
+@media (min-width: 320px) {
+  .logo_response {
+    display: block;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .logo_response {
+    display: none;
+  }
+}
+
+.logo_response .logo-response__link img {
+  width: 150px;
+  background-size: contain;
+  background-position: center;
+}
+
 .spinner {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6,12 +25,13 @@
   z-index: 102;
   height: 14px;
   width: 18px;
-  margin: auto;
+  margin: auto 30px;
 }
 
 @media (min-width: 320px) {
   .spinner {
     display: block;
+    margin-left: auto;
   }
 }
 
@@ -90,10 +110,15 @@
   margin-top: -4px;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #363636;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 * {
@@ -270,15 +295,26 @@ ul {
 }
 
 .main-nav .nav__conteiner .main-nav__conteiner .main-nav__font-resize {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 23px 0;
   margin-left: auto;
   position: relative;
+}
+
+@media (min-width: 320px) {
+  .main-nav .nav__conteiner .main-nav__conteiner .main-nav__font-resize {
+    display: none;
+  }
+}
+
+@media (min-width: 1050px) {
+  .main-nav .nav__conteiner .main-nav__conteiner .main-nav__font-resize {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .main-nav .nav__conteiner .main-nav__conteiner .main-nav__font-resize::before {
@@ -723,27 +759,6 @@ ul {
   line-height: 1.6;
 }
 
-@media (min-width: 320px) {
-  .welcome .welcome__text .welcome__text--part1 p,
-  .welcome .welcome__text .welcome__text--part2 p,
-  .welcome .welcome__text .individual__text--part1 p,
-  .welcome .welcome__text .individual__text--part2 p,
-  .welcome .individual__text .welcome__text--part1 p,
-  .welcome .individual__text .welcome__text--part2 p,
-  .welcome .individual__text .individual__text--part1 p,
-  .welcome .individual__text .individual__text--part2 p,
-  .individual .welcome__text .welcome__text--part1 p,
-  .individual .welcome__text .welcome__text--part2 p,
-  .individual .welcome__text .individual__text--part1 p,
-  .individual .welcome__text .individual__text--part2 p,
-  .individual .individual__text .welcome__text--part1 p,
-  .individual .individual__text .welcome__text--part2 p,
-  .individual .individual__text .individual__text--part1 p,
-  .individual .individual__text .individual__text--part2 p {
-    text-align: justify;
-  }
-}
-
 @media (min-width: 1050px) {
   .welcome .welcome__text .welcome__text--part1 p,
   .welcome .welcome__text .welcome__text--part2 p,
@@ -762,7 +777,6 @@ ul {
   .individual .individual__text .individual__text--part1 p,
   .individual .individual__text .individual__text--part2 p {
     font-size: 18px;
-    text-align: unset;
   }
 }
 
@@ -1168,7 +1182,7 @@ ul {
   display: flex;
 }
 
-.main-form__lable {
+.main-form__label {
   width: 83px;
   background-position: center;
   background-size: auto;
@@ -1176,15 +1190,15 @@ ul {
   background-color: #f1ede4;
 }
 
-.main-form__name-lable {
+.main-form__name-label {
   background-image: url(../image/form/name.png);
 }
 
-.main-form__email-lable {
+.main-form__email-label {
   background-image: url(../image/form/email.png);
 }
 
-.main-form__tel-lable {
+.main-form__tel-label {
   background-image: url(../image/form/tel.png);
 }
 
@@ -1211,24 +1225,24 @@ ul {
           box-sizing: border-box;
 }
 
-.main-form__date-lable {
+.main-form__date-label {
   background-image: url(../image/form/date.png);
 }
 
-.main-form__textarea-lable {
+.main-form__textarea-label {
   width: 83px;
   height: 190px;
   background-image: url(../image/form/massege.png);
 }
 
 @media (min-width: 320px) {
-  .main-form__textarea-lable {
+  .main-form__textarea-label {
     display: none;
   }
 }
 
 @media (min-width: 1050px) {
-  .main-form__textarea-lable {
+  .main-form__textarea-label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1307,20 +1321,20 @@ ul {
 }
 
 @media (min-width: 320px) {
-  .main-form__checkbox-lable {
+  .main-form__checkbox-label {
     font-size: 14px;
     line-height: 20px;
   }
 }
 
 @media (min-width: 1050px) {
-  .main-form__checkbox-lable {
+  .main-form__checkbox-label {
     font-size: 18px;
     line-height: 40px;
   }
 }
 
-.main-form__checkbox-lable--link {
+.main-form__checkbox-label--link {
   color: #66bdaa;
   text-decoration: none;
   font-weight: 700;
