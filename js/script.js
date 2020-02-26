@@ -38,5 +38,25 @@ document.addEventListener('DOMContentLoaded', () => {
             event.preventDefault();
             DropDownKontaktlinsen.classList.remove("modal__show");
          });
+
+
+         const spinner = document.querySelector('.spinner');
+         const spinnerButton = document.querySelectorAll('.spinner-line');
        
+         // ФУНКЦИЯ отображает и добавляет класс спинеру
+         const spinnerClassToggle = () => {
+               // spinerMenu.classList.toggle("modal-show");
+               spinnerButton.forEach(elem => {
+               elem.classList.toggle("active")  
+               });    
+            };
+        // ============================================ 
+
+        // Боковое меню (работа спинера)
+        spinner.addEventListener('click', (event) => {
+           console.log("click")
+         event.preventDefault();
+         spinnerClassToggle();
+      });
+
 });
