@@ -639,20 +639,20 @@ ul {
   background-size: contain;
 }
 
-.call-back__form {
+.section-white {
   max-width: 1372px;
   margin: auto;
   padding: 150px 0;
 }
 
-.call-back__form .call-back__title {
+.section-white__title {
   text-align: center;
   font-family: "Lora";
   font-size: 32px;
   margin: 0  0 10px 0;
 }
 
-.call-back__title--description {
+.section-white__description {
   text-align: center;
   font-size: 20px;
   color: #b0a99c;
@@ -660,7 +660,7 @@ ul {
   margin-bottom: 110px;
 }
 
-.call-back__title--description::before {
+.section-white__description::before {
   content: "";
   background-color: #b0a99c;
   height: 1px;
@@ -670,7 +670,7 @@ ul {
   bottom: -51px;
 }
 
-.call-back__title--description::after {
+.section-white__description::after {
   content: "";
   background-color: #fff;
   background-image: url(../image/eye.png);
@@ -681,6 +681,77 @@ ul {
   position: absolute;
   left: calc(50% - 27px);
   bottom: -63px;
+}
+
+.main-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-form__first-block, .main-form__second-block, .main-form__checkbox-block, .main-form__button-block {
+  max-width: 48%;
+}
+
+.main-form__box {
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-form__lable {
+  width: 83px;
+  height: 84px;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: #f1ede4;
+}
+
+.main-form__name-lable {
+  background-image: url(../image/form/name.png);
+}
+
+.main-form__email-lable {
+  background-image: url(../image/form/email.png);
+}
+
+.main-form__tel-lable {
+  background-image: url(../image/form/tel.png);
+}
+
+.main-form__input {
+  width: 581px;
+  height: 82px;
+  border: 1px solid #f1ede4;
+  background-color: #fcfcfc;
+  padding: 0 30px;
+}
+
+.main-form__textarea {
+  width: 580px;
+  height: 192px;
+  border: 1px solid #f1ede4;
+  background-color: #fcfcfc;
+  padding: 34px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-form__date-lable {
+  background-image: url(../image/form/date.png);
+}
+
+.main-form__textarea-lable {
+  width: 83px;
+  height: 193px;
+  background-image: url(../image/form/massege.png);
 }
 
 .documents {

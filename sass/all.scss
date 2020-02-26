@@ -530,48 +530,113 @@ ul{
 }
 // --------------------------------------------------------SECTION Form
 
-.call-back__form{
+.section-white{
     max-width: 1372px;
     margin: auto;
     padding: 150px 0;
     
-    .call-back__title{
+    &__title{
         text-align: center;
         font-family: "Lora";
         font-size: 32px;
         margin: 0  0 10px 0;
         }
+
+    &__description{
+        text-align: center;
+        font-size: 20px;
+        color: #b0a99c;
+        position: relative;
+        margin-bottom: 110px; 
+    
+        &::before {
+            content: "";
+            background-color: #b0a99c;
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -51px;
+        }
+        &::after {
+            content: "";
+            background-color: #fff;
+            background-image: url(../image/eye.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 54px;  //chek
+            height: 26px;
+            position: absolute;
+            left: calc(50% - 27px);
+            bottom: -63px;
+        }
+    } 
 }
+.main-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-.call-back__title--description{
-    text-align: center;
-    font-size: 20px;
-    color: #b0a99c;
-    position: relative;
-    margin-bottom: 110px; 
-
-    &::before {
-        content: "";
-        background-color: #b0a99c;
-        height: 1px;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: -51px;
+    &__first-block,
+    &__second-block,
+    &__checkbox-block,
+    &__button-block{
+        max-width: 48%;
     }
-    &::after {
-        content: "";
-        background-color: #fff;
-        background-image: url(../image/eye.png);
+
+    &__box{
+        padding-bottom: 20px;
+        display: flex;
+    }
+
+    &__lable{
+        width: 83px;
+        height: 84px;
         background-position: center;
+        background-size: auto;
         background-repeat: no-repeat;
-        width: 54px;  //chek
-        height: 26px;
-        position: absolute;
-        left: calc(50% - 27px);
-        bottom: -63px;
+        background-color: #f1ede4;
     }
+
+    &__name-lable{
+        background-image: url(../image/form/name.png);   
+    }
+    &__email-lable{
+        background-image: url(../image/form/email.png);   
+    }
+    &__tel-lable{
+        background-image: url(../image/form/tel.png);   
+    }
+
+
+    &__input{
+        width: 581px;
+        height: 82px;
+        border: 1px solid #f1ede4;
+        background-color: #fcfcfc;
+        padding: 0 30px;
+    }
+
+    &__textarea{
+        width: 580px;
+        height: 192px;
+        border: 1px solid #f1ede4;
+        background-color: #fcfcfc;
+        padding: 34px 30px;
+        box-sizing: border-box;
+    }
+    &__date-lable{
+        background-image: url(../image/form/date.png);   
+    }
+
+    &__textarea-lable{
+        width: 83px;
+        height: 193px;
+        background-image: url(../image/form/massege.png);   
+    }
+
 }
+
 
 // --------------------------------------------------------FOOTER
 

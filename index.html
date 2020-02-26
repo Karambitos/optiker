@@ -78,6 +78,7 @@
                 </ul><!-- /.nav--contact__list -->
             </div><!-- /.nav__contact--conteiner -->
         </nav> <!-- /.main-nav -->
+    </header>
         <main>
             <section class="order">
                 <div class="order__conteiner">
@@ -175,35 +176,41 @@
                     </div><!-- /.advantages__text -->
                 </div><!-- /.advantages__conteiner -->
             </section> <!-- /.advantages -->
-            <section class="call-back__form">
-                <h1 class="call-back__title">Wir haben Ihr Interesse geweckt?</h1>
-                <p class="call-back__title--description">Jetzt einen Termin kostenlosen Sehtest vereinbaren!</p>
-                <form class="apointment-form" action="https://echo.htmlacademy.ru" method="post">
-                    <div class="apointment-item main__block">
-                        <label for="apointment-name"></label>
-                        <input id="apointment-name" type="name" name="name" placeholder="Ihr Vor- und Nachname">
-                
-                        <label for="apointment-email"></label>
-                        <input id="apointment-email" type="email" name="email" placeholder="Ihre E-Mail Adresse">
-                    
-                        <label for="apointment-tel"></label>
-                        <input id="apointment-tel" type="tel" name="tel" placeholder="Ihre Telefonnummer">
+            <section class="section-white">
+                <h1 class="section-white__title">Wir haben Ihr Interesse geweckt?</h1>
+                <p class="section-white__description">Jetzt einen Termin kostenlosen Sehtest vereinbaren!</p>
+                <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="main-form__first-block">
+                        <p class="main-form__box">
+                            <lable class="main-form__lable main-form__name-lable" for="form__name"></lable>
+                            <input class="main-form__input" id="form__name" type="name" name="name" placeholder="Ihr Vor- und Nachname">
+                        </p>
+                        <p class="main-form__box">
+                            <lable class="main-form__lable main-form__email-lable" for="form__email"></lable>
+                            <input class="main-form__input" id="form__email" type="email" name="email" placeholder="Ihre E-Mail Adresse">    
+                        </p>
+                        <p class="main-form__box">
+                            <lable class="main-form__lable main-form__tel-lable" for="form__tel"></lable>
+                            <input class="main-form__input" id="form__tel" type="tel" name="tel" placeholder="Ihre Telefonnummer">    
+                        </p>
                     </div>
-                    <div class="apointment-item secondary__block">
-                        <label for="apointment-date"></label>
-                        <input id="apointment-date" type="date" name="date" placeholder="Datum auswählen"> 
-                   
-                        <label for="message"></label>
-                        <textarea rows="5" id="message" required>Ihre Nachricht an uns</textarea>
+                    <div class="main-form__second-block">
+                        <p class="main-form__box">
+                        <lable class="main-form__lable main-form__date-lable" for="form__date"></lable>
+                        <input class="main-form__input" id="form__date"  name="date" placeholder="Datum auswählen">    
+                        </p> 
+                        <p class="main-form__box">
+                        <lable class="main-form__lable main-form__textarea-lable" for="form__textarea"></lable>
+                        <textarea class="main-form__textarea" id="form__textarea" required>Ihre Nachricht an uns</textarea>
+                        </p>
+                        <!-- rows -->
                     </div>
-                    <div class="apointment-item checkbox__block">
-                        <input type="checkbox" name="checkbox" value="">Die Datenschutzerklärung habe ich gelesen und akzeptiert.<Br>
+                    <div class="main-form__checkbox-block">
+                        <input class="main-form__checkbox" type="checkbox" name="checkbox" value="">Die Datenschutzerklärung habe ich gelesen und akzeptiert.<Br>
                     </div>
-                    <div class="apointment-item button__block">
-                        <button class="button" type="submit">Nachricht abschicken<span></span></button>
+                    <div class="main-form__button-block">
+                        <button class="main-form__button" class="button" type="submit">Nachricht abschicken<span></span></button>
                     </div>
-                   
-
                 </form>
             </section><!-- /.call-back__form -->
             <section class="map">
@@ -242,7 +249,7 @@
                 </div>
             </footer>
         </main>
-    </header>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/jQuery.js"></script>
