@@ -180,36 +180,36 @@
                 <h1 class="section-white__title">Wir haben Ihr Interesse geweckt?</h1>
                 <p class="section-white__description">Jetzt einen Termin kostenlosen Sehtest vereinbaren!</p>
                 <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
-                    <div class="main-form__first-block">
+                    <div data-aos="fade-right" class="main-form__first-block">
                         <p class="main-form__box">
                             <lable class="main-form__lable main-form__name-lable" for="form__name"></lable>
-                            <input class="main-form__input" id="form__name" type="name" name="name" placeholder="Ihr Vor- und Nachname">
+                            <input class="main-form__input" id="form__name" type="name" name="name" placeholder="Ihr Vor- und Nachname" required>
                         </p>
                         <p class="main-form__box">
                             <lable class="main-form__lable main-form__email-lable" for="form__email"></lable>
-                            <input class="main-form__input" id="form__email" type="email" name="email" placeholder="Ihre E-Mail Adresse">    
+                            <input class="main-form__input" id="form__email" type="email" name="email" placeholder="Ihre E-Mail Adresse" required>    
                         </p>
                         <p class="main-form__box">
                             <lable class="main-form__lable main-form__tel-lable" for="form__tel"></lable>
-                            <input class="main-form__input" id="form__tel" type="tel" name="tel" placeholder="Ihre Telefonnummer">    
+                            <input class="main-form__input" id="form__tel" type="tel" name="tel" placeholder="Ihre Telefonnummer" required>    
                         </p>
                     </div>
-                    <div class="main-form__second-block">
+                    <div data-aos="fade-left" class="main-form__second-block">
                         <p class="main-form__box">
                         <lable class="main-form__lable main-form__date-lable" for="form__date"></lable>
-                        <input class="main-form__input" id="form__date"  name="date" placeholder="Datum auswählen">    
+                        <input class="main-form__input" id="form__date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date" placeholder="Datum auswählen">    
                         </p> 
                         <p class="main-form__box">
                         <lable class="main-form__lable main-form__textarea-lable" for="form__textarea"></lable>
                         <textarea class="main-form__textarea" id="form__textarea" required>Ihre Nachricht an uns</textarea>
                         </p>
-                        <!-- rows -->
                     </div>
-                    <div class="main-form__checkbox-block">
-                        <input class="main-form__checkbox" type="checkbox" name="checkbox" value="">Die Datenschutzerklärung habe ich gelesen und akzeptiert.<Br>
+                    <div data-aos="fade-right" class="main-form__checkbox-block">
+                        <input class="main-form__checkbox" id="form__checkbox" type="checkbox" name="checkbox" value="" required>
+                        <label class="main-form__checkbox-lable" for="form__checkbox">Die <a href="#" class="main-form__checkbox-lable--link"> Datenschutzerklärung</a>  habe ich gelesen und akzeptiert.</label>
                     </div>
-                    <div class="main-form__button-block">
-                        <button class="main-form__button" class="button" type="submit">Nachricht abschicken<span></span></button>
+                    <div data-aos="fade-left" class="main-form__button-block">
+                        <button class="main-form__button" class="button" type="submit">Nachricht abschicken<span class="main-form__button__arrow"></span></button>
                     </div>
                 </form>
             </section><!-- /.call-back__form -->
