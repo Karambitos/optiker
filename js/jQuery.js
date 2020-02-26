@@ -2,7 +2,7 @@
 // ============================================
 $(document).ready(function() {
   $(".slide-one").owlCarousel({
-    nav: true,
+    nav: false,
     loop:true,
     autoplay:true,
     autoplayTimeout:5000,
@@ -15,8 +15,8 @@ $(document).ready(function() {
   });
 
   $(".slide-two").owlCarousel({
-    margin: 10,
-    nav: true,
+    // margin: 10,
+    nav: false,
     loop:true,
     autoplay:false,
     responsive: {
